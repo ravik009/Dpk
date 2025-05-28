@@ -1,400 +1,376 @@
 <!DOCTYPE html>
 <html lang="hi">
-
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5641271205652518"
-     crossorigin="anonymous"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>💝 शुभकामना भेजक</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💝 शुभकामना भेजक</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(-45deg, #ff4500, #ff6347, #ff8c00, #dc143c, #b22222);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-    }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(-45deg, #ff4500, #ff6347, #ff8c00, #dc143c, #b22222);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
 
-    @keyframes gradientBG {
-      0% {
-        background-position: 0% 50%;
-      }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-      50% {
-        background-position: 100% 50%;
-      }
+        .container {
+            background: rgba(255, 165, 0, 0.95);
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 140, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
 
-      100% {
-        background-position: 0% 50%;
-      }
-    }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff8c00, #ff7f50, #ff6347, #ff4500, #ffa500);
+            z-index: -1;
+            border-radius: 25px;
+        }
 
-    .container {
-      background: rgba(255, 165, 0, 0.95);
-      border-radius: 25px;
-      padding: 25px;
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      max-width: 450px;
-      width: 100%;
-      backdrop-filter: blur(15px);
-      border: 2px solid rgba(255, 140, 0, 0.5);
-      position: relative;
-      overflow: hidden;
-    }
+        .header {
+            margin-bottom: 25px;
+        }
 
-    .container::before {
-      content: '';
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      right: -2px;
-      bottom: -2px;
-      background: linear-gradient(45deg, #ff8c00, #ff7f50, #ff6347, #ff4500, #ffa500);
-      z-index: -1;
-      border-radius: 25px;
-    }
+        .image-container {
+            margin-bottom: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
 
-    .header {
-      margin-bottom: 25px;
-    }
+        .profile-image {
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            border: 4px solid rgba(255, 255, 255, 0.8);
+        }
 
-    .image-container {
-      margin-bottom: 20px;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-      position: relative;
-      display: flex;
-      justify-content: center;
-    }
+        .image-container:hover .profile-image {
+            transform: scale(1.05);
+        }
 
-    .profile-image {
-      display: block; /* इमेज के नीचे अतिरिक्त स्पेस को हटाने में मदद करता है */
-      width: 100%;    /* इमेज को उसके पैरेंट कंटेनर (.image-container) की पूरी चौड़ाई लेने देगा */
-      height: auto;   /* इमेज के आस्पेक्ट रेशियो (पहलू अनुपात) को बनाए रखेगा */
-      max-width: 100%;/* यह सुनिश्चित करता है कि इमेज अपने कंटेनर से बाहर न जाए */
-      object-fit: cover; /* यह तब उपयोगी होता है जब .image-container की कोई निश्चित ऊंचाई हो या इमेज पर max-height सेट हो। height: auto के साथ, यह सुनिश्चित करेगा कि इमेज चौड़ाई के अनुसार ठीक से स्केल हो। */
-      border-radius: 15px;
-      transition: transform 0.3s ease;
-      border: 4px solid rgba(255, 255, 255, 0.8);
-    }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 22px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(45deg, #8b4513, #d2691e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
 
-    .image-container:hover .profile-image {
-      transform: scale(1.05);
-    }
+        .subtitle {
+            color: #333;
+            font-size: 14px;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-weight: 600;
+        }
 
-    h1 {
-      color: #333;
-      margin-bottom: 10px;
-      font-size: 22px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-      background: linear-gradient(45deg, #8b4513, #d2691e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-weight: bold;
-    }
+        .quick-templates {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
 
-    .subtitle {
-      color: #333;
-      font-size: 14px;
-      margin-bottom: 20px;
-      font-style: italic;
-      font-weight: 600;
-    }
+        .template-btn {
+            padding: 8px 14px;
+            background: linear-gradient(45deg, #8b4513, #cd853f);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(139, 69, 19, 0.3);
+            font-weight: bold;
+        }
 
-    .quick-templates {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 20px;
-      justify-content: center;
-    }
+        .template-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.5);
+        }
 
-    .template-btn {
-      padding: 8px 14px;
-      background: linear-gradient(45deg, #8b4513, #cd853f);
-      color: white;
-      border: none;
-      border-radius: 15px;
-      font-size: 12px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 3px 10px rgba(139, 69, 19, 0.3);
-      font-weight: bold;
-    }
+        .input-group {
+            margin-bottom: 18px;
+            text-align: left;
+        }
 
-    .template-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(139, 69, 19, 0.5);
-    }
+        .input-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
 
-    .input-group {
-      margin-bottom: 18px;
-      text-align: left;
-    }
+        .emoji {
+            margin-right: 5px;
+            font-size: 16px;
+        }
 
-    .input-label {
-      display: flex;
-      align-items: center;
-      margin-bottom: 8px;
-      color: #333;
-      font-weight: bold;
-      font-size: 14px;
-    }
+        .input-field {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #d2691e;
+            border-radius: 15px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+            position: relative;
+        }
 
-    .emoji {
-      margin-right: 5px;
-      font-size: 16px;
-    }
-
-    .input-field {
-      width: 100%;
-      padding: 12px 15px;
-      border: 2px solid #d2691e;
-      border-radius: 15px;
-      font-size: 15px;
-      transition: all 0.3s ease;
-      background: rgba(255, 255, 255, 0.9);
-      position: relative;
-    }
-
-    .input-field:focus {
-      outline: none;
-      border-color: #8b4513;
-      box-shadow: 0 0 15px rgba(139, 69, 19, 0.3);
-      transform: translateY(-2px);
-    }
-
-    .input-field[readonly] {
-      background-color: rgba(220, 220, 220, 0.7);
-      /* Slightly different background for readonly */
-      cursor: text;
-      /* Allow text selection */
-    }
+        .input-field:focus {
+            outline: none;
+            border-color: #8b4513;
+            box-shadow: 0 0 15px rgba(139, 69, 19, 0.3);
+            transform: translateY(-2px);
+        }
+        .input-field[readonly] {
+            background-color: rgba(220, 220, 220, 0.7); /* Slightly different background for readonly */
+            cursor: text; /* Allow text selection */
+        }
 
 
-    .textarea-field {
-      height: 100px;
-      /* Adjusted height slightly */
-      resize: vertical;
-      font-family: inherit;
-    }
+        .textarea-field {
+            height: 100px; /* Adjusted height slightly */
+            resize: vertical;
+            font-family: inherit;
+        }
 
-    .char-counter {
-      text-align: right;
-      font-size: 12px;
-      color: #666;
-      margin-top: 5px;
-      font-weight: bold;
-    }
+        .char-counter {
+            text-align: right;
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+            font-weight: bold;
+        }
 
-    .action-buttons {
-      display: flex;
-      gap: 10px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-    .btn {
-      padding: 12px 20px;
-      border: none;
-      border-radius: 25px;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 140px;
-    }
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 140px;
+        }
 
-    .btn-whatsapp {
-      background: linear-gradient(135deg, #25D366, #128C7E);
-      color: white;
-      box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-    }
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
 
-    .btn-copy-url {
-      /* Renamed class for clarity */
-      background: linear-gradient(135deg, #8b4513, #cd853f);
-      color: white;
-      box-shadow: 0 5px 15px rgba(139, 69, 19, 0.4);
-    }
+        .btn-copy-url { /* Renamed class for clarity */
+            background: linear-gradient(135deg, #8b4513, #cd853f);
+            color: white;
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.4);
+        }
 
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
 
-    .btn:active {
-      transform: translateY(-1px);
-    }
+        .btn:active {
+            transform: translateY(-1px);
+        }
 
-    .btn-icon {
-      margin-right: 6px;
-      font-size: 16px;
-    }
+        .btn-icon {
+            margin-right: 6px;
+            font-size: 16px;
+        }
 
-    .toast {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      transform: translateX(400px);
-      transition: transform 0.3s ease;
-      z-index: 1000;
-      font-weight: bold;
-    }
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+            font-weight: bold;
+        }
 
-    .toast.show {
-      transform: translateX(0);
-    }
+        .toast.show {
+            transform: translateX(0);
+        }
 
-    .floating-emojis {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-    }
+        .floating-emojis {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
 
-    .floating-emoji {
-      position: absolute;
-      font-size: 20px;
-      animation: float 6s linear infinite;
-      opacity: 0;
-    }
+        .floating-emoji {
+            position: absolute;
+            font-size: 20px;
+            animation: float 6s linear infinite;
+            opacity: 0;
+        }
 
-    @keyframes float {
-      0% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 1;
-      }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
 
-      100% {
-        transform: translateY(-100px) rotate(360deg);
-        opacity: 0;
-      }
-    }
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+                margin: 5px;
+                border-radius: 20px;
+            }
 
-    @media (max-width: 480px) {
-      .container {
-        padding: 20px;
-        margin: 5px;
-        border-radius: 20px;
-      }
+            h1 {
+                font-size: 20px;
+            }
 
-      h1 {
-        font-size: 20px;
-      }
+            .profile-image {
+                width: 180px;
+                height: 110px;
+            }
 
-      .profile-image {
-        /* ये लाइनें हटा दी गई हैं:
-        width: 180px;
-        height: 110px; */
-        /* अब मुख्य CSS से width: 100%; और height: auto; लागू होगा,
-           जिससे इमेज मोबाइल पर अपने कंटेनर के हिसाब से साइज़ लेगी।
-           आप चाहें तो अधिकतम ऊंचाई भी दे सकते हैं, जैसे:
-           max-height: 200px; */
-      }
+            .action-buttons {
+                flex-direction: column;
+            }
 
-      .action-buttons {
-        flex-direction: column;
-      }
+            .btn {
+                width: 100%;
+            }
 
-      .btn {
-        width: 100%;
-      }
+            .quick-templates {
+                gap: 5px;
+            }
 
-      .quick-templates {
-        gap: 5px;
-      }
-
-      .template-btn {
-        font-size: 11px;
-        padding: 6px 10px;
-      }
-
-      .textarea-field {
-        height: 90px;
-      }
-    }
-  </style>
+            .template-btn {
+                font-size: 11px;
+                padding: 6px 10px;
+            }
+            .textarea-field {
+                height: 90px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div class="floating-emojis" id="floatingEmojis"></div>
+    <div class="floating-emojis" id="floatingEmojis"></div>
 
-  <div class="container">
-    <div class="header">
-      <div class="image-container">
-        <img src="maraj.jpg" alt="छत्रपति शिवाजी महाराज" class="profile-image" id="profileImage">
-      </div>
-      <h1>🙏 छत्रपति शिवाजी महाराज</h1>
-      <p class="subtitle">वीर शिवाजी के आदर्शों को अपनाएं ⚔️</p>
-    </div>
+    <div class="container">
+        <div class="header">
+            <div class="image-container">
+                <img src="maraj.jpg" alt="छत्रपति शिवाजी महाराज" class="profile-image" id="profileImage">
+            </div>
+            <h1>🙏 छत्रपति शिवाजी महाराज</h1>
+            <p class="subtitle">वीर शिवाजी के आदर्शों को अपनाएं ⚔️</p>
+        </div>
 
+      
 
-
-    <div class="input-group">
-      <label class="input-label">
-              <span class="emoji">👤</span>
-              आपका नाम:
+        <div class="input-group">
+            <label class="input-label">
+                <span class="emoji">👤</span>
+                आपका नाम:
             </label>
-      <input type="text" id="senderName" class="input-field" placeholder="अपना नाम यहाँ लिखें..." maxlength="50">
-    </div>
+            <input type="text" id="senderName" class="input-field" placeholder="अपना नाम यहाँ लिखें..." maxlength="50">
+        </div>
 
-    <div class="input-group">
-      <label class="input-label">
-              <span class="emoji">💌</span>
-              आपकी शुभकामनाएं:
+        <div class="input-group">
+            <label class="input-label">
+                <span class="emoji">💌</span>
+                आपकी शुभकामनाएं:
             </label>
-      <textarea id="wishMessage" class="input-field textarea-field" placeholder="अपनी प्यारी शुभकामनाएं यहाँ लिखें..." maxlength="500">🚩 हर हर महादेव! 🙏🌟 छत्रपति शिवाजी महाराज के आदर्शों की तरह⚔️ आपका जीवन भी वीरता और न्याय से भरा हो!🏰 स्वराज्य की भावना आपके दिल में बनी रहे!💫 शिवरायांच्या मार्गावर चालत राहा!जय भवानी! जय शिवाजी! 🚩</textarea>
-      <div class="char-counter" id="charCounter">0/500</div>
-    </div>
+            <textarea id="wishMessage" class="input-field textarea-field" placeholder="अपनी प्यारी शुभकामनाएं यहाँ लिखें..." maxlength="500">🚩 हर हर महादेव! 🙏🌟 छत्रपति शिवाजी महाराज के आदर्शों की तरह⚔️ आपका जीवन भी वीरता और न्याय से भरा हो!🏰 स्वराज्य की भावना आपके दिल में बनी रहे!💫 शिवरायांच्या मार्गावर चालत राहा!जय भवानी! जय शिवाजी! 🚩</textarea>
+            <div class="char-counter" id="charCounter">0/500</div>
+        </div>
 
-    <div class="input-group">
-      <label class="input-label" for="pageShareURL">
-              <span class="emoji">🔗</span>
-              पेज URL शेयर करें:
+        <div class="input-group">
+            <label class="input-label" for="pageShareURL">
+                <span class="emoji">🔗</span>
+                पेज URL शेयर करें:
             </label>
-      <input type="text" id="pageShareURL" class="input-field" readonly>
-    </div>
+            <input type="text" id="pageShareURL" class="input-field" readonly>
+        </div>
 
-    <div class="action-buttons">
-      <button class="btn btn-whatsapp" onclick="sendToWhatsApp()">
-              <span class="btn-icon">📱</span>
-              WhatsApp भेजें
+        <div class="action-buttons">
+            <button class="btn btn-whatsapp" onclick="sendToWhatsApp()">
+                <span class="btn-icon">📱</span>
+                WhatsApp भेजें
             </button>
-      <button class="btn btn-copy-url" onclick="copyPageURL()"> <span class="btn-icon">📋</span>
-              URL कॉपी करें </button>
+            <button class="btn btn-copy-url" onclick="copyPageURL()"> <span class="btn-icon">📋</span>
+                URL कॉपी करें </button>
+        </div>
     </div>
-  </div>
-  <div class="toast" id="toast"></div>
-  <script>
-    // Load template
+    <div class="toast" id="toast"></div>
+    <script>
+        
+
+        // Load template
         function loadTemplate(type) {
             document.getElementById('wishMessage').value = templates[type];
             updateCharCounter();
@@ -517,7 +493,6 @@
                 sendToWhatsApp();
             }
         });
-  </script>
+    </script>
 </body>
-
 </html>
