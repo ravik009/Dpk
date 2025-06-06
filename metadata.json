@@ -1,0 +1,5 @@
+{
+  "name": "AI Image Studio",
+  "description": "Generate stunning AI images from text prompts. Choose from popular social media sizes to guide your creations using Google's Gemini API.",
+  "requestFramePermissions": []
+}
